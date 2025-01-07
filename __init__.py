@@ -22,3 +22,21 @@ def encryptage(valeur):
                                                                                                                                                      
 if __name__ == "__main__":
   app.run(debug=True)
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/exercice1')
+def exercice1():
+    return render_template('exercice1.html')
+
+@app.route('/exercice2')
+def exercice2():
+    return render_template('exercice2.html')
+
+# Ajoutez d'autres routes pour les exercices suivants
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
