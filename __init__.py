@@ -19,7 +19,7 @@ def Jeu_Des_Base():
 
 @app.route('/bibliotheque_images')
 def Jeu_Des_Base():
-    return render_template('bibliotheque_images.html') #Comm
+    return render_template('Outils_JS.html') #Comm
 
 key = Fernet.generate_key()
 f = Fernet(key)
