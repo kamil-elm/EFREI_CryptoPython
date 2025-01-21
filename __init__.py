@@ -8,8 +8,8 @@ import sqlite3
 app = Flask(__name__)                                                                                                                  
                                                                                                                                        
 @app.route('/')
-def hello_world():
-    return render_template('hello.html') #Comm
+def Jeu_Des_Base():
+    return render_template('Jeu_Des_Base.html') #Comm
 
 key = Fernet.generate_key()
 f = Fernet(key)
@@ -22,18 +22,4 @@ def encryptage(valeur):
                                                                                                                                                      
 if __name__ == "__main__":
   app.run(debug=True)
-
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def exercice1():
-    return render_template('Jeu_Des_Base.html')
-
-
-# Ajoutez d'autres routes pour les exercices suivants
-
-if __name__ == '__main__':
-    app.run(debug=True)
 
