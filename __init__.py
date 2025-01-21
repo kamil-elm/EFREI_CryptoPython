@@ -27,13 +27,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/exercice1')
+@app.route('')
 def exercice1():
-    return render_template('exercice1.html')
+    return render_template('Jeu_Des_Base.html')
 
-@app.route('/exercice2')
-def exercice2():
-    return render_template('exercice2.html')
 
 # Ajoutez d'autres routes pour les exercices suivants
 
