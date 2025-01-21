@@ -13,7 +13,7 @@ def racine():
 
 
 
-@app.route('/templates/Jeu_Des_Base')
+@app.route('/Jeu_Des_Base')
 def Jeu_Des_Base():
     return render_template('Jeu_Des_Base.html') #Comm
 
