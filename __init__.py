@@ -7,7 +7,7 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)                                                                                                                  
                                                                                                                                        
-@app.route('/')
+@app.route('/templates/Jeu_Des_Base')
 def Jeu_Des_Base():
     return render_template('Jeu_Des_Base.html') #Comm
 
