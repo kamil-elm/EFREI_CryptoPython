@@ -6,7 +6,13 @@ from urllib.request import urlopen
 import sqlite3
                                                                                                                                        
 app = Flask(__name__)                                                                                                                  
-                                                                                                                                       
+
+@app.route('/')
+def racine():
+    return render_template('hello.html') #Comm
+
+
+
 @app.route('/templates/Jeu_Des_Base')
 def Jeu_Des_Base():
     return render_template('Jeu_Des_Base.html') #Comm
