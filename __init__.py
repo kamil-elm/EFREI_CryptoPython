@@ -17,6 +17,10 @@ def racine():
 def Jeu_Des_Base():
     return render_template('Jeu_Des_Base.html') #Comm
 
+@app.route('/bibliotheque_images')
+def Jeu_Des_Base():
+    return render_template('bibliotheque_images.html') #Comm
+
 key = Fernet.generate_key()
 f = Fernet(key)
 
