@@ -27,7 +27,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('')
+@app.route('/')
 def exercice1():
     return render_template('Jeu_Des_Base.html')
 
