@@ -21,6 +21,10 @@ def Jeu_Des_Base():
 def bibliotheque_images():
     return render_template('Outils_JS.html') #Comm2
 
+@app.route('/Roulette_Russe')
+def Roulette_Russe():
+    return render_template('Outils_JS.html') #Comm3
+
 key = Fernet.generate_key()
 f = Fernet(key)
 
