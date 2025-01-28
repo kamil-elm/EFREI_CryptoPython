@@ -23,7 +23,7 @@ def bibliotheque_images():
 
 @app.route('/Roulette_Russe')
 def Roulette_Russe():
-    return render_template('Outils_JS.html') #Comm3
+    return render_template('Roulette_Russe_Etape_1_Barillet_Vide.html') #Comm3
 
 key = Fernet.generate_key()
 f = Fernet(key)
